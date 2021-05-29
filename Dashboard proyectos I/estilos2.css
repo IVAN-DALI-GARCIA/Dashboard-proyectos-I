@@ -1,0 +1,281 @@
+:root {
+    --main-color: #2f40dd;
+    --color-dark: #1d2231;
+    --text-grey: #8390a2;
+    --text-active: rgb(0, 0, 0);
+}
+
+.registro {
+    background: rgb(188, 255, 255);
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    font-family: sans-serif;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border-radius: 15px;
+    padding-bottom: 15px;
+    padding-top: 15px;
+}
+
+.regform {
+    width: 1200px;
+    background: rgba(0, 0, 0, .7);
+    margin: auto;
+    margin-bottom: 1.7rem;
+    color: #ffffff;
+    padding: 10px 0px 10px 0px;
+    text-align: center;
+    border-radius: 15px 15px 0px 0px;
+}
+
+.regform2 {
+    width: 1200px;
+    background: rgba(216, 0, 0, 0.7);
+    margin: auto;
+    color: #ffffff;
+    padding: 10px 0px 10px 0px;
+    text-align: center;
+    border-radius: 15px 15px 0px 0px;
+}
+
+.main2 {
+    background-color: rgba(0, 0, 0, 0.432);
+    width: 1200px;
+    margin: auto;
+    padding-bottom: 10px;
+    border-radius: 0px 0px 15px 15px;
+    margin-bottom: 10px;
+}
+
+form {
+    padding: 10px;
+}
+
+.name01 {
+    width: 100px;
+    height: 100px;
+}
+
+.name {
+    margin-left: 25px;
+    margin-top: 10px;
+    width: 125px;
+    color: rgb(255, 255, 255);
+    font-size: 15px;
+    font-weight: 700px;
+}
+
+.email {
+    position: relative;
+    left: 200px;
+    top: -37px;
+    line-height: 40px;
+    width: 520px;
+    border-radius: 6px;
+    padding: 0 22px;
+    font-size: 16px;
+    color: rgb(7, 0, 0);
+    outline: none;
+    background: white;
+}
+
+.code {
+    position: relative;
+    left: 200px;
+    top: -37px;
+    line-height: 40px;
+    width: 200px;
+    border-radius: 6px;
+    padding: 0 22px;
+    font-size: 16px;
+    color: #555;
+    outline: none;
+}
+
+.number {
+    position: relative;
+    left: 130px;
+    top: -37px;
+    line-height: 40px;
+    width: 200px;
+    border-radius: 6px;
+    padding: 0 22px;
+    font-size: 16px;
+    color: #555;
+    outline: none;
+}
+
+.area-code {
+    position: relative;
+    color: #e5e5e5;
+    text-transform: capitalize;
+    font-size: 16px;
+    left: 61px;
+    top: -2px;
+}
+
+.phone-number {
+    position: relative;
+    color: #e5e5e5;
+    text-transform: capitalize;
+    font-size: 16px;
+    left: -200px;
+    top: -2px;
+}
+
+.option {
+    position: relative;
+    left: 205px;
+    top: -37px;
+    line-height: 40px;
+    width: 532px;
+    height: 40px;
+    border-radius: 6px;
+    padding: 0 22px;
+    font-size: 16px;
+    color: #555;
+    outline: none;
+    overflow: hidden;
+}
+
+.option option {
+    font-size: 20px;
+}
+
+.option2 {
+    position: relative;
+    left: 205px;
+    top: -37px;
+    line-height: 40px;
+    width: 532px;
+    height: 200px;
+    border-radius: 6px;
+    padding: 0 22px;
+    font-size: 16px;
+    color: #555;
+    outline: none;
+    overflow: hidden;
+}
+
+.option2 option {
+    font-size: 20px;
+}
+
+#student {
+    margin-left: 25px;
+    color: white;
+    font-size: 18px;
+}
+
+.radio {
+    display: inline-block;
+    padding-right: 70px;
+    font-size: 25px;
+    margin-left: 25px;
+    margin-top: 15px;
+    color: white;
+    outline: none;
+}
+
+.radio input {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    cursor: pointer;
+    outline: none;
+}
+
+button {
+    background: var(--main-color);
+    display: block;
+    margin: auto;
+    margin-top: 40px;
+    text-align: center;
+    border-radius: 12px;
+    border: 2px solid #366473;
+    padding: 14px 110px;
+    outline: none;
+    color: white;
+    cursor: pointer;
+    transition: .025px;
+    font-size: 18px;
+}
+
+.titulo {
+    font-size: 18px;
+}
+
+button:hover {
+    background-color: rgb(188, 255, 255);
+    color: rgb(255, 100, 82);
+}
+
+h3 {
+    font-size: 15px;
+}
+
+.flecha {
+    width: 200px;
+    margin: auto;
+    margin-left: 270px;
+    margin-top: 60px;
+    margin-bottom: 60px;
+}
+
+.respuesta {
+    width: 500px;
+}
+
+.fotografia {
+    background: white;
+    background-image: url(imagenes/foto-de-perfil-5.jpg);
+    background-size: 150px;
+    background-repeat: no-repeat;
+    border-radius: 50%;
+    border: 1px solid black;
+    height: 150px;
+    width: 150px;
+    margin-left: 35px;
+    margin-bottom: 50px;
+}
+
+.fotografia p {
+    text-align: center;
+    padding-top: 40%;
+    color: rgb(77, 77, 77);
+}
+
+.foto {
+    display: flex;
+}
+
+.datos-fotografia {
+    margin-left: 20px;
+    margin-top: 5px;
+    width: 200px;
+    height: 100px;
+}
+
+.datos-fotografia p {
+    background: var(--main-color);
+    border-radius: 10px;
+    color: #fff;
+    font-size: .8rem;
+    padding: .5rem 1rem;
+    border: 1px solid var(--main-color);
+    cursor: pointer;
+    margin-top: 6px;
+}
+
+.datos-fotografia p:hover {
+    background: rgb(188, 255, 255);
+    border-radius: 10px;
+    color: rgb(255, 100, 82);
+    font-size: .8rem;
+    font-weight: 900;
+    padding: .5rem 1rem;
+    border: 1px solid var(--main-color);
+    transition: all 500ms easy-out;
+}

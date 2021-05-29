@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+    <link rel="stylesheet" href="estilos.css">
+    <link rel="stylesheet" href="estilos2.css">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css">
+    <title>SITEMA DE GESTION EMPRESARIAL</title>
+</head>
+
+<body>
+    <input type="checkbox" id="nav-toggle">
+    <div class="sidebar">
+        <div class="sidebar-brand">
+            <h2><img src="imagenes/LOGO_SIGEM-removebg-preview.png" width="50px" alt=""> <span>SIGEM</span></h2>
+        </div>
+        <div class="sidebar-menu">
+            <ul>
+                <li>
+                    <a href="index.html"><span class="las la-igloo"></span>
+                        <span>PRINCIPAL</span></a>
+                </li>
+                <li>
+                    <a href="" class="active"><span class="las la-users"></span>
+                        <span>CLIENTES</span></a>
+                </li>
+                <li>
+                    <a href=""><span class="las la-clipboard-list"></span>
+                        <span>SKU'S</span></a>
+                </li>
+                <li>
+                    <a href=""><span class="las la-shopping-bag"></span>
+                        <span>PEDIDOS</span></a>
+                </li>
+                <li>
+                    <a href=""><span class="las la-receipt"></span>
+                        <span>INVENTARIO</span></a>
+                </li>
+                <li>
+                    <a href=""><span class="las la-user-circle"></span>
+                        <span>USUARIOS</span></a>
+                </li>
+                <li>
+                    <a href=""><span class="las la-clipboard-list"></span>
+                        <span>CONFIGURACION</span></a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="main-content">
+        <header>
+            <h2>
+                <label for="nav-toggle">
+                    <span class="las la-bars"></span>
+                </label> CLIENTES
+            </h2>
+            <div class="div search-wrapper">
+                <span class="las la-search"></span>
+                <input type="search" placeholder="Buscar">
+            </div>
+            <div class="user-wrapper">
+                <img src="imagenes/img2.jpg" width="40px" alt="">
+                <div>
+                    <h4>Dali Garry</h4>
+                    <small>Super Admin</small>
+                </div>
+            </div>
+        </header>
+        <main>
+            <div class="recent-grid-clientes">
+                <div class="projects">
+                    <div class="card">
+                        <div class="card-header">
+                            <h3>REGISTRO DE CLIENTES NUEVOS </h3>
+                            <a href="index.html">
+                                SALIR <span class="las la-arrow-right"></span>
+                            </a>
+
+                        </div>
+                        <div class="cad-dody">
+                            <div class="table-responsive">
+                                <table width="100%">
+                                    <div class="registro">
+                                        <div class="regform">
+                                            <h2 class="titulo">DATOS PERSONALES</h3>
+                                        </div>
+                                        <div class="main2">
+                                            <form action="registro_ctes_nuevos.html" method="#">
+                                                <h3 class="name">NOMBRE</h3>
+                                                <input class="email" type="text" name="usuario" id="" placeholder="Ecribe tu Nombre." required>
+                                                <h3 class="name">APELLIDO PATERNO</h3>
+                                                <input class="email" type="text" name="usuario" id="" placeholder="Ecribe tu Apellido" required>
+
+                                                <h3 class="name">APELLIDO MATERNO</h3>
+                                                <input class="email" type="text" name="usuario" id="" placeholder="Ecribe tu Apellido">
+
+                                                <h3 class="name">Email</h3>
+                                                <input class="email" type="text" name="email" id="" placeholder="********@gmail.com" required>
+
+                                                <h3 class="name">FECHA DE NACIMIENTO</h3>
+                                                <input class="email" type="date" name="fecha" id="" required>
+
+                                                <h3 class="name">TELEFONO 1</h3>
+                                                <input class="email" type="text" name="usuario" id="" placeholder="Ecribe tU numero">
+
+                                                <h3 class="name">TELEFONO 2</h3>
+                                                <input class="email" type="text" name="usuario" id="" placeholder="Ecribe tU numero">
+
+                                                <h3 class="name">CELULAR 1</h3>
+                                                <input class="email" type="text" name="usuario" id="" placeholder="Ecribe tU numero">
+
+                                                <h3 class="name">CELULAR 2</h3>
+                                                <input class="email" type="text" name="usuario" id="" placeholder="Ecribe tU numero">
+                                                <div class="regform">
+                                                    <h2 class="titulo">DATOS DE FACTUACION</h2>
+                                                </div>
+
+                                                <h3 class="name">RAZON SOCIAL</h3>
+                                                <input class="email" type="text" name="usuario" id="" placeholder="Ecribe tu razon social">
+
+                                                <h3 class="name">RFC</h3>
+                                                <input class="email" type="text" name="usuario" id="" placeholder="Ecribe tu RFC">
+
+                                                <h3 class="name">DOMICILIO FISCAL</h3>
+                                                <input class="email" type="text" name="usuario" id="" placeholder="">
+
+                                                <h3 class="name">FORMA DE PAGO </h3>
+                                                <input class="email" type="text" name="usuario" id="" placeholder="">
+
+                                                <div class="regform">
+                                                    <h2 class="titulo">DATOS DE ALMACEN</h2>
+                                                </div>
+
+                                                <h3 class="name">ALMACEN ORIGEN </h3>
+                                                <input class="email" type="text" name="usuario" id="" placeholder="">
+
+                                                <h3 class="name">OCURRE </h3>
+                                                <input class="email" type="text" name="usuario" id="" placeholder="">
+
+                                                <h3 class="name">QUIEN RECIBE </h3>
+                                                <input class="email" type="text" name="usuario" id="" placeholder="">
+
+                                                <button type="submit" name="submit">INGRESAR</button>
+
+                                            </form>
+                                        </div>
+                                    </div>
+                                </table>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+        </main>
+    </div>
+
+</body>
+
+</html>
