@@ -1,0 +1,606 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+    <link rel="stylesheet" href="estilos.css">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css">
+    <title>SITEMA DE GESTION EMPRESARIAL</title>
+</head>
+
+<body>
+    <input type="checkbox" id="nav-toggle">
+    <div class="sidebar">
+        <div class="sidebar-brand">
+            <h2><img src="imagenes/LOGO_SIGEM-removebg-preview.png" width="50px" alt=""> <span>SIGEM</span></h2>
+        </div>
+        <div class="sidebar-menu">
+            <ul>
+                <li>
+                    <a href="index.html"><span class="las la-igloo"></span>
+                        <span>PRINCIPAL</span></a>
+                </li>
+                <li>
+                    <a href="" class="active"><span class="las la-users"></span>
+                        <span>CLIENTES</span></a>
+                </li>
+                <li>
+                    <a href=""><span class="las la-clipboard-list"></span>
+                        <span>CONFIGURACION</span></a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="main-content">
+        <header>
+            <h2>
+                <label for="nav-toggle">
+                    <span class="las la-bars"></span>
+                </label> HISTORIAL DE CLIENTES
+            </h2>
+            <div class="div search-wrapper">
+                <span class="las la-search"></span>
+                <input type="search" placeholder="Buscar">
+            </div>
+            <div class="user-wrapper">
+                <img src="imagenes/img2.jpg" width="40px" alt="">
+                <div>
+                    <h4>Dali Garry</h4>
+                    <small>Super Admin</small>
+                </div>
+            </div>
+        </header>
+        <main>
+            <div class="recent-grid-clientes">
+                <div class="projects">
+                    <div class="card">
+                        <div class="card-header">
+                            <h3>HISTORIA DE CLIENTES </h3>
+                            <a href="clientes.html">
+                                IR A CLIETES <span class="las la-arrow-right"></span>
+                            </a>
+                        </div>
+                        <div class="seleccionar">
+                            <h2> NUMERO DE CLIENTE:</h2>
+                            <h3> 123645-235</h3>
+                            <h2>NOMBRE DE CLIENTE:</h2>
+                            <h3>Productos de Consumo Z S.A DE C.V </h3>
+                            <h2 class="nueva_busqueda">NUEVA BUSQUEDA, BUSCAR POR:</h2>
+                            <div class="select">
+                                <select class="option" id="format" name="format">
+                                    <option disabled="disabled" selected="selected" value="">SELECCIONA UN ALMACEN</option>
+                                    <option value="00" selected>POR NOMBRE</option>
+                                    <option value="01">POR CODIGO</option>
+                                    <option value="02">POR DOMICILIO</option>
+                                    <option value="03">POR REGION</option>
+                                    <option value="04">POR ZONA</option>
+                                    <option value="05">POR ESTADO</option>
+                                    <option value="06">POR LOCALIDAD</option>
+                                    <option value="07">IMPORTACIONES</option>                                    
+                                </select>
+                            </div>
+                            <div class="form">
+                                <input class="buscar1" type="text" placeholder="colocar el texto o numero a buscar ">
+                            </div>
+                            <div class="botones3">
+                                <div class="btn-enviar">
+                                    <input class="generar" type="button" value="GENERAR">
+                                </div>
+                                <div class="btn-enviar">
+                                    <input class="generar" type="button" value="EXPORTAR">
+                                </div>
+                            </div>
+
+
+                        </div>
+                        <div class="cad-dody">
+                            <div class="table-responsive">
+                                <table width="100%">
+                                    <thead>
+                                        <tr>
+                                            <td>
+                                                # FACTURA
+                                            </td>
+                                            <td>
+                                                RAZON SOCIAL
+                                            </td>
+                                            <td>
+                                                ESTADO
+                                            </td>
+                                            <td>
+                                                DOMICILIO
+                                            </td>
+                                            <td>
+                                                ALMACEN
+                                            </td>
+                                            <td>
+                                                ESTATUS
+                                            </td>
+                                            <td>
+                                                HISTORIAL.
+                                            </td>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>
+                                                123645
+                                            </td>
+                                            <td>Productos de Consumo Z </td>
+                                            <td>
+                                                Jalisco
+                                            </td>
+                                            <td>
+                                                Tunes #2632 Col. Agustin Melghar Tlaquepaque Jalisco.
+                                            </td>
+                                            <td>
+                                                01-General
+                                            </td>
+                                            <td>
+                                                Activo
+                                            </td>
+                                            <td class="export">
+                                                <a href="detalle_pedidos.html"><span class="las la-file-export"></span> VER FACTURA</a>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                123645
+                                            </td>
+                                            <td>Productos de Consumo Z </td>
+                                            <td>
+                                                Jalisco
+                                            </td>
+                                            <td>
+                                                Tunes #2632 Col. Agustin Melghar Tlaquepaque Jalisco.
+                                            </td>
+                                            <td>
+                                                01-General
+                                            </td>
+                                            <td>
+                                                Activo
+                                            </td>
+                                            <td class="export">
+                                                <a href="detalle_pedidos.html"><span class="las la-file-export"></span> VER FACTURA</a>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                123645
+                                            </td>
+                                            <td>Productos de Consumo Z </td>
+                                            <td>
+                                                Jalisco
+                                            </td>
+                                            <td>
+                                                Tunes #2632 Col. Agustin Melghar Tlaquepaque Jalisco.
+                                            </td>
+                                            <td>
+                                                01-General
+                                            </td>
+                                            <td>
+                                                Activo
+                                            </td>
+                                            <td class="export">
+                                                <a href="detalle_pedidos.html"><span class="las la-file-export"></span> VER FACTURA</a>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                123645
+                                            </td>
+                                            <td>Productos de Consumo Z </td>
+                                            <td>
+                                                Jalisco
+                                            </td>
+                                            <td>
+                                                Tunes #2632 Col. Agustin Melghar Tlaquepaque Jalisco.
+                                            </td>
+                                            <td>
+                                                01-General
+                                            </td>
+                                            <td>
+                                                Activo
+                                            </td>
+                                            <td class="export">
+                                                <a href="detalle_pedidos.html"><span class="las la-file-export"></span> VER FACTURA</a>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                123645
+                                            </td>
+                                            <td>Productos de Consumo Z </td>
+                                            <td>
+                                                Jalisco
+                                            </td>
+                                            <td>
+                                                Tunes #2632 Col. Agustin Melghar Tlaquepaque Jalisco.
+                                            </td>
+                                            <td>
+                                                01-General
+                                            </td>
+                                            <td>
+                                                Activo
+                                            </td>
+                                            <td class="export">
+                                                <a href="detalle_pedidos.html"><span class="las la-file-export"></span> VER FACTURA</a>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                123645
+                                            </td>
+                                            <td>Productos de Consumo Z </td>
+                                            <td>
+                                                Jalisco
+                                            </td>
+                                            <td>
+                                                Tunes #2632 Col. Agustin Melghar Tlaquepaque Jalisco.
+                                            </td>
+                                            <td>
+                                                01-General
+                                            </td>
+                                            <td>
+                                                Activo
+                                            </td>
+                                            <td class="export">
+                                                <a href="detalle_pedidos.html"><span class="las la-file-export"></span> VER FACTURA</a>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                123645
+                                            </td>
+                                            <td>Productos de Consumo Z </td>
+                                            <td>
+                                                Jalisco
+                                            </td>
+                                            <td>
+                                                Tunes #2632 Col. Agustin Melghar Tlaquepaque Jalisco.
+                                            </td>
+                                            <td>
+                                                01-General
+                                            </td>
+                                            <td>
+                                                Activo
+                                            </td>
+                                            <td class="export">
+                                                <a href="detalle_pedidos.html"><span class="las la-file-export"></span> VER FACTURA</a>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                123645
+                                            </td>
+                                            <td>Productos de Consumo Z </td>
+                                            <td>
+                                                Jalisco
+                                            </td>
+                                            <td>
+                                                Tunes #2632 Col. Agustin Melghar Tlaquepaque Jalisco.
+                                            </td>
+                                            <td>
+                                                01-General
+                                            </td>
+                                            <td>
+                                                Activo
+                                            </td>
+                                            <td class="export">
+                                                <a href="detalle_pedidos.html"><span class="las la-file-export"></span> VER FACTURA</a>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                123645
+                                            </td>
+                                            <td>Productos de Consumo Z </td>
+                                            <td>
+                                                Jalisco
+                                            </td>
+                                            <td>
+                                                Tunes #2632 Col. Agustin Melghar Tlaquepaque Jalisco.
+                                            </td>
+                                            <td>
+                                                01-General
+                                            </td>
+                                            <td>
+                                                Activo
+                                            </td>
+                                            <td class="export">
+                                                <a href="detalle_pedidos.html"><span class="las la-file-export"></span> VER FACTURA</a>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                123645
+                                            </td>
+                                            <td>Productos de Consumo Z </td>
+                                            <td>
+                                                Jalisco
+                                            </td>
+                                            <td>
+                                                Tunes #2632 Col. Agustin Melghar Tlaquepaque Jalisco.
+                                            </td>
+                                            <td>
+                                                01-General
+                                            </td>
+                                            <td>
+                                                Activo
+                                            </td>
+                                            <td class="export">
+                                                <a href="detalle_pedidos.html"><span class="las la-file-export"></span> VER FACTURA</a>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                123645
+                                            </td>
+                                            <td>Productos de Consumo Z </td>
+                                            <td>
+                                                Jalisco
+                                            </td>
+                                            <td>
+                                                Tunes #2632 Col. Agustin Melghar Tlaquepaque Jalisco.
+                                            </td>
+                                            <td>
+                                                01-General
+                                            </td>
+                                            <td>
+                                                Activo
+                                            </td>
+                                            <td class="export">
+                                                <a href="detalle_pedidos.html"><span class="las la-file-export"></span> VER FACTURA</a>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                123645
+                                            </td>
+                                            <td>Productos de Consumo Z </td>
+                                            <td>
+                                                Jalisco
+                                            </td>
+                                            <td>
+                                                Tunes #2632 Col. Agustin Melghar Tlaquepaque Jalisco.
+                                            </td>
+                                            <td>
+                                                01-General
+                                            </td>
+                                            <td>
+                                                Activo
+                                            </td>
+                                            <td class="export">
+                                                <a href="detalle_pedidos.html"><span class="las la-file-export"></span> VER FACTURA</a>
+                                            </td>
+                                            <tr>
+                                                <td>
+                                                    123645
+                                                </td>
+                                                <td>Productos de Consumo Z </td>
+                                                <td>
+                                                    Jalisco
+                                                </td>
+                                                <td>
+                                                    Tunes #2632 Col. Agustin Melghar Tlaquepaque Jalisco.
+                                                </td>
+                                                <td>
+                                                    01-General
+                                                </td>
+                                                <td>
+                                                    Activo
+                                                </td>
+                                                <td class="export">
+                                                    <a href="detalle_pedidos.html"><span class="las la-file-export"></span> VER FACTURA</a>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    123645
+                                                </td>
+                                                <td>Productos de Consumo Z </td>
+                                                <td>
+                                                    Jalisco
+                                                </td>
+                                                <td>
+                                                    Tunes #2632 Col. Agustin Melghar Tlaquepaque Jalisco.
+                                                </td>
+                                                <td>
+                                                    01-General
+                                                </td>
+                                                <td>
+                                                    Activo
+                                                </td>
+                                                <td class="export">
+                                                    <a href="detalle_pedidos.html"><span class="las la-file-export"></span> VER FACTURA</a>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    123645
+                                                </td>
+                                                <td>Productos de Consumo Z </td>
+                                                <td>
+                                                    Jalisco
+                                                </td>
+                                                <td>
+                                                    Tunes #2632 Col. Agustin Melghar Tlaquepaque Jalisco.
+                                                </td>
+                                                <td>
+                                                    01-General
+                                                </td>
+                                                <td>
+                                                    Activo
+                                                </td>
+                                                <td class="export">
+                                                    <a href="detalle_pedidos.html"><span class="las la-file-export"></span> VER FACTURA</a>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    123645
+                                                </td>
+                                                <td>Productos de Consumo Z </td>
+                                                <td>
+                                                    Jalisco
+                                                </td>
+                                                <td>
+                                                    Tunes #2632 Col. Agustin Melghar Tlaquepaque Jalisco.
+                                                </td>
+                                                <td>
+                                                    01-General
+                                                </td>
+                                                <td>
+                                                    Activo
+                                                </td>
+                                                <td class="export">
+                                                    <a href="detalle_pedidos.html"><span class="las la-file-export"></span> VER FACTURA</a>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    123645
+                                                </td>
+                                                <td>Productos de Consumo Z </td>
+                                                <td>
+                                                    Jalisco
+                                                </td>
+                                                <td>
+                                                    Tunes #2632 Col. Agustin Melghar Tlaquepaque Jalisco.
+                                                </td>
+                                                <td>
+                                                    01-General
+                                                </td>
+                                                <td>
+                                                    Activo
+                                                </td>
+                                                <td class="export">
+                                                    <a href="detalle_pedidos.html"><span class="las la-file-export"></span> VER FACTURA</a>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    123645
+                                                </td>
+                                                <td>Productos de Consumo Z </td>
+                                                <td>
+                                                    Jalisco
+                                                </td>
+                                                <td>
+                                                    Tunes #2632 Col. Agustin Melghar Tlaquepaque Jalisco.
+                                                </td>
+                                                <td>
+                                                    01-General
+                                                </td>
+                                                <td>
+                                                    Activo
+                                                </td>
+                                                <td class="export">
+                                                    <a href="detalle_pedidos.html"><span class="las la-file-export"></span> VER FACTURA</a>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    123645
+                                                </td>
+                                                <td>Productos de Consumo Z </td>
+                                                <td>
+                                                    Jalisco
+                                                </td>
+                                                <td>
+                                                    Tunes #2632 Col. Agustin Melghar Tlaquepaque Jalisco.
+                                                </td>
+                                                <td>
+                                                    01-General
+                                                </td>
+                                                <td>
+                                                    Activo
+                                                </td>
+                                                <td class="export">
+                                                    <a href="detalle_pedidos.html"><span class="las la-file-export"></span> VER FACTURA</a>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    123645
+                                                </td>
+                                                <td>Productos de Consumo Z </td>
+                                                <td>
+                                                    Jalisco
+                                                </td>
+                                                <td>
+                                                    Tunes #2632 Col. Agustin Melghar Tlaquepaque Jalisco.
+                                                </td>
+                                                <td>
+                                                    01-General
+                                                </td>
+                                                <td>
+                                                    Activo
+                                                </td>
+                                                <td class="export">
+                                                    <a href="detalle_pedidos.html"><span class="las la-file-export"></span> VER FACTURA</a>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    123645
+                                                </td>
+                                                <td>Productos de Consumo Z </td>
+                                                <td>
+                                                    Jalisco
+                                                </td>
+                                                <td>
+                                                    Tunes #2632 Col. Agustin Melghar Tlaquepaque Jalisco.
+                                                </td>
+                                                <td>
+                                                    01-General
+                                                </td>
+                                                <td>
+                                                    Activo
+                                                </td>
+                                                <td class="export">
+                                                    <a href="detalle_pedidos.html"><span class="las la-file-export"></span> VER FACTURA</a>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    123645
+                                                </td>
+                                                <td>Productos de Consumo Z </td>
+                                                <td>
+                                                    Jalisco
+                                                </td>
+                                                <td>
+                                                    Tunes #2632 Col. Agustin Melghar Tlaquepaque Jalisco.
+                                                </td>
+                                                <td>
+                                                    01-General
+                                                </td>
+                                                <td>
+                                                    Activo
+                                                </td>
+                                                <td class="export">
+                                                    <a href="detalle_pedidos.html"><span class="las la-file-export"></span> VER FACTURA</a>
+                                                </td>
+                                            </tr>
+
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+        </main>
+    </div>
+
+</body>
+
+</html>

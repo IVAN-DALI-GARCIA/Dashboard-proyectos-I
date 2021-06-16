@@ -1,0 +1,845 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+    <link rel="stylesheet" href="estilos.css">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css">
+    <title>SITEMA DE GESTION EMPRESARIAL</title>
+</head>
+
+<body>
+    <input type="checkbox" id="nav-toggle">
+    <div class="sidebar">
+        <div class="sidebar-brand">
+            <h2><img src="imagenes/LOGO_SIGEM-removebg-preview.png" width="50px" alt=""> <span>SIGEM</span></h2>
+        </div>
+        <div class="sidebar-menu">
+            <ul>
+                <li>
+                    <a href="index.html"><span class="las la-igloo"></span>
+                        <span>PRINCIPAL</span></a>
+                </li>
+                <li>
+                    <a href="clientes.html" class=""><span class="las la-users"></span>
+                        <span>CLIENTES</span></a>
+                </li>
+                <li>
+                    <a href=""><span class="las la-clipboard-list"></span>
+                        <span>SKU'S</span></a>
+                </li>
+                <li>
+                    <a href="pedidos.html" class=""><span class="las la-shopping-bag"></span>
+                        <span>PEDIDOS</span></a>
+                </li>
+                <li>
+                    <a href="" class="active"><span class="las la-receipt"></span>
+                        <span>INVENTARIO</span></a>
+                </li>
+                <li>
+                    <a href=""><span class="las la-user-circle"></span>
+                        <span>USUARIOS</span></a>
+                </li>
+                <li>
+                    <a href=""><span class="las la-clipboard-list"></span>
+                        <span>CONFIGURACION</span></a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="main-content">
+        <header>
+            <h2>
+                <label for="nav-toggle">
+                    <span class="las la-bars"></span>
+                </label> INVENTARIOS
+            </h2>
+            <div class="div search-wrapper">
+                <span class="las la-search"></span>
+                <input type="search" placeholder="Buscar">
+            </div>
+            <div class="user-wrapper">
+                <img src="imagenes/img2.jpg" width="40px" alt="">
+                <div>
+                    <h4>Dali Garry</h4>
+                    <small>Super Admin</small>
+                </div>
+            </div>
+        </header>
+        <main>
+            <div class="cards">
+                <div class="card-single">
+                    <div>
+                        <h1>25,366</h1>
+                        <span>UNIDADES TOTALES</span>
+                    </div>
+                    <div>
+                        <span class="lab la-product-hunt"></span>
+                    </div>
+                </div>
+                <div class="card-single">
+                    <div>
+                        <h1>1,980</h1>
+                        <span>SKU ACTIVOS</span>
+                    </div>
+                    <div>
+                        <span class="las la-clipboard-list"></span>
+                    </div>
+                </div>
+                <div class="card-single">
+                    <div>
+                        <h1>12,300</h1>
+                        <span>UNIDADES EN PROGRESO</span>
+                    </div>
+                    <div>
+                        <span class="las la-shopping-bag"></span>
+                    </div>
+                </div>
+                <div class="card-single">
+                    <div>
+                        <h1>139</h1>
+                        <span>SKU FALTANTES</span>
+                    </div>
+                    <div>
+                        <span class="las la-exclamation-triangle"></span>
+                    </div>
+                </div>
+            </div>
+            <div class="recent-grid-clientes">
+                <div class="projects">
+                    <div class="card">
+                        <div class="card-header">
+                            <h3>DASHBOARD DE ALMACENES E INVENTARIOS </h3>
+                            <a href="#">
+                                EXPORTAR TODO <span class="las la-file-excel"></span>
+                            </a>
+                        </div>
+                        <div class="seleccionar">
+                            <h2> SELECCIONA UN ALMACEN:</h2>
+                            <div class="select">
+                                <select class="option" id="format" name="format">
+                                    <option disabled="disabled" selected="selected" value="">SELECCIONA UN ALMACEN</option>
+                                    <option value="00" selected>TODOS (INVENTARIOS GENERAL)</option>
+                                    <option value="01">ALMACEN GENERAL</option>
+                                    <option value="02">ALMACEN MATERIAS PRIMAS </option>
+                                    <option value="03">ALMACEN DE PRODUCTOS SEMITERMINADOS O EN CUSROS</option>
+                                    <option value="04">ALMACEN DE RECAMBIO</option>
+                                    <option value="05">ALMACEN DE MATERIAL AUXILIAR</option>
+                                    <option value="06">ALMACEN DE ENVACES Y EMBALAJES</option>
+                                    <option value="07">ALMACEN DE TRANSITO</option>
+                                    <option value="08">ALMACEN DE CUARENTENA</option>
+                                    <option value="09">ALMACEN DE EXPORTACIONES</option>
+                                    <option value="10">ALMACEN VIRTUAL</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="seleccionar">
+                            <h2> SELECCIONA UNA CATEGORIA:</h2>
+                            <div class="select">
+                                <select class="option" id="format" name="format">
+                                    <option disabled="disabled" selected="selected" value="">SELECCIONA UN ALMACEN</option>
+                                    <option value="00" selected>TODAS (TODAS LA CATEGORIAS))</option>
+                                    <option value="01">TINTAS Y SUMINISTROS </option>
+                                    <option value="02">SUMINISTROS DE IMPRESION DIGITAL </option>
+                                    <option value="03">TINTAS</option>
+                                    <option value="04">PROMOTORRES DE ADHERENCIA</option>
+                                    <option value="05">AUXILIARES PARA LA TINRA</option>
+                                    <option value="06">IMPRESION DIGITAL</option>
+                                    <option value="07">REPUESTOS PARA EQUIPOS DE IMPRESION</option>
+                                    <option value="08">HOJAS DE SEGURIDAD SDS/CONFORMIDAD</option>
+                                    <option value="09">SUMINISTROS PARA IMPRESION TERMOGRAFICA</option>
+                                    <option value="10">SOLVENTES</option>
+                                    <option value="10">ENDIRECEDORES</option>
+                                    <option value="10">PLACAS</option>
+                                    <option value="10">ALMOHADILLAS</option>
+                                    <option value="10">COPAS, ANILLOS Y TINTA DE TAMPOGRÁFIAS</option>
+                                    <option value="10">PZAS DE TAMPOGRÁFIAS</option>
+                                    <option value="10">HOJAS DE SEGURIDA SDS</option>
+                                    <option value="10">SUMINISTROS TAGLESS</option>
+                                    <option value="10">MATERIAS PRIMAS</option>
+                                    <option value="10">SUMINISTROS OPERATIVOS</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="btn-enviar">
+                            <input class="generar" type="button" value="GENERAR">
+                        </div>
+                        <div class="btn-enviar">
+                            <input class="generar" type="button" value="EXPORTAR">
+                        </div>
+
+                        <div class="cad-dody">
+                            <div class="table-responsive">
+                                <table width="100%">
+                                    <thead>
+                                        <tr>
+                                            <td>
+                                                # SKU
+                                            </td>
+                                            <td>
+                                                EXISTENCIA
+                                            </td>
+                                            <td>
+                                                NOMBRE
+                                            </td>
+                                            <td>
+                                                DESCRIPCION
+                                            </td>
+                                            <td>
+                                                CATEGORIA
+                                            </td>
+                                            <td>
+                                                SECCION
+                                            </td>
+                                            <td>
+                                                Detalle
+                                            </td>
+                                            <td>
+                                                Estatus
+                                            </td>
+                                            <td>
+                                                MODIFICAR EXISTENCIA.
+                                            </td>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>
+                                                A-512395
+                                            </td>
+                                            <td>
+                                                150 CJAS.
+                                            </td>
+                                            <td>Tinta de impresión por Inyección </td>
+                                            <td>
+                                                Tinta BB ultra flexible para impresoras digitales
+                                            </td>
+                                            <td>
+                                                TINTAS Y SUMINISTROS
+                                            </td>
+                                            <td>
+                                                01-CONSUMIBLES
+                                            </td>
+                                            <td class="ver-pedido">
+                                                <a href="#" title=" Ver SKU a DETALLE">VER<span class="las la-angle-double-right"></span> </a>
+                                            </td>
+                                            <td>
+                                                <span class="status purple"></span> Activo
+                                            </td>
+                                            <td class="export" onclick="alert('¿Estas seguro que desear MODIFICAR esta partida?, precione ESC para CANCELAR.')">
+                                                <span class="las la-file-export"></span>MODIFICAR
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                A-512395
+                                            </td>
+                                            <td>
+                                                150 CJAS.
+                                            </td>
+                                            <td>Tinta de impresión por Inyección </td>
+                                            <td>
+                                                Tinta BB ultra flexible para impresoras digitales
+                                            </td>
+                                            <td>
+                                                TINTAS Y SUMINISTROS
+                                            </td>
+                                            <td>
+                                                01-CONSUMIBLES
+                                            </td>
+                                            <td class="ver-pedido">
+                                                <a href="#" title=" Ver SKU a DETALLE">VER<span class="las la-angle-double-right"></span> </a>
+                                            </td>
+                                            <td>
+                                                <span class="status purple"></span> Activo
+                                            </td>
+                                            <td class="export" onclick="alert('¿Estas seguro que desear MODIFICAR esta partida?, precione ESC para CANCELAR.')">
+                                                <span class="las la-file-export"></span>MODIFICAR
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                A-512395
+                                            </td>
+                                            <td>
+                                                150 CJAS.
+                                            </td>
+                                            <td>Tinta de impresión por Inyección </td>
+                                            <td>
+                                                Tinta BB ultra flexible para impresoras digitales
+                                            </td>
+                                            <td>
+                                                TINTAS Y SUMINISTROS
+                                            </td>
+                                            <td>
+                                                01-CONSUMIBLES
+                                            </td>
+                                            <td class="ver-pedido">
+                                                <a href="#" title=" Ver SKU a DETALLE">VER<span class="las la-angle-double-right"></span> </a>
+                                            </td>
+                                            <td>
+                                                <span class="status purple"></span> Activo
+                                            </td>
+                                            <td class="export" onclick="alert('¿Estas seguro que desear MODIFICAR esta partida?, precione ESC para CANCELAR.')">
+                                                <span class="las la-file-export"></span>MODIFICAR
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                A-512395
+                                            </td>
+                                            <td>
+                                                150 CJAS.
+                                            </td>
+                                            <td>Tinta de impresión por Inyección </td>
+                                            <td>
+                                                Tinta BB ultra flexible para impresoras digitales
+                                            </td>
+                                            <td>
+                                                TINTAS Y SUMINISTROS
+                                            </td>
+                                            <td>
+                                                01-CONSUMIBLES
+                                            </td>
+                                            <td class="ver-pedido">
+                                                <a href="#" title=" Ver SKU a DETALLE">VER<span class="las la-angle-double-right"></span> </a>
+                                            </td>
+                                            <td>
+                                                <span class="status purple"></span> Activo
+                                            </td>
+                                            <td class="export" onclick="alert('¿Estas seguro que desear MODIFICAR esta partida?, precione ESC para CANCELAR.')">
+                                                <span class="las la-file-export"></span>MODIFICAR
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                A-512395
+                                            </td>
+                                            <td>
+                                                150 CJAS.
+                                            </td>
+                                            <td>Tinta de impresión por Inyección </td>
+                                            <td>
+                                                Tinta BB ultra flexible para impresoras digitales
+                                            </td>
+                                            <td>
+                                                TINTAS Y SUMINISTROS
+                                            </td>
+                                            <td>
+                                                01-CONSUMIBLES
+                                            </td>
+                                            <td class="ver-pedido">
+                                                <a href="#" title=" Ver SKU a DETALLE">VER<span class="las la-angle-double-right"></span> </a>
+                                            </td>
+                                            <td>
+                                                <span class="status purple"></span> Activo
+                                            </td>
+                                            <td class="export" onclick="alert('¿Estas seguro que desear MODIFICAR esta partida?, precione ESC para CANCELAR.')">
+                                                <span class="las la-file-export"></span>MODIFICAR
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                A-512395
+                                            </td>
+                                            <td>
+                                                150 CJAS.
+                                            </td>
+                                            <td>Tinta de impresión por Inyección </td>
+                                            <td>
+                                                Tinta BB ultra flexible para impresoras digitales
+                                            </td>
+                                            <td>
+                                                TINTAS Y SUMINISTROS
+                                            </td>
+                                            <td>
+                                                01-CONSUMIBLES
+                                            </td>
+                                            <td class="ver-pedido">
+                                                <a href="#" title=" Ver SKU a DETALLE">VER<span class="las la-angle-double-right"></span> </a>
+                                            </td>
+                                            <td>
+                                                <span class="status purple"></span> Activo
+                                            </td>
+                                            <td class="export" onclick="alert('¿Estas seguro que desear MODIFICAR esta partida?, precione ESC para CANCELAR.')">
+                                                <span class="las la-file-export"></span>MODIFICAR
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                A-512395
+                                            </td>
+                                            <td>
+                                                150 CJAS.
+                                            </td>
+                                            <td>Tinta de impresión por Inyección </td>
+                                            <td>
+                                                Tinta BB ultra flexible para impresoras digitales
+                                            </td>
+                                            <td>
+                                                TINTAS Y SUMINISTROS
+                                            </td>
+                                            <td>
+                                                01-CONSUMIBLES
+                                            </td>
+                                            <td class="ver-pedido">
+                                                <a href="#" title=" Ver SKU a DETALLE">VER<span class="las la-angle-double-right"></span> </a>
+                                            </td>
+                                            <td>
+                                                <span class="status purple"></span> Activo
+                                            </td>
+                                            <td class="export" onclick="alert('¿Estas seguro que desear MODIFICAR esta partida?, precione ESC para CANCELAR.')">
+                                                <span class="las la-file-export"></span>MODIFICAR
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                A-512395
+                                            </td>
+                                            <td>
+                                                150 CJAS.
+                                            </td>
+                                            <td>Tinta de impresión por Inyección </td>
+                                            <td>
+                                                Tinta BB ultra flexible para impresoras digitales
+                                            </td>
+                                            <td>
+                                                TINTAS Y SUMINISTROS
+                                            </td>
+                                            <td>
+                                                01-CONSUMIBLES
+                                            </td>
+                                            <td class="ver-pedido">
+                                                <a href="#" title=" Ver SKU a DETALLE">VER<span class="las la-angle-double-right"></span> </a>
+                                            </td>
+                                            <td>
+                                                <span class="status purple"></span> Activo
+                                            </td>
+                                            <td class="export" onclick="alert('¿Estas seguro que desear MODIFICAR esta partida?, precione ESC para CANCELAR.')">
+                                                <span class="las la-file-export"></span>MODIFICAR
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                A-512395
+                                            </td>
+                                            <td>
+                                                150 CJAS.
+                                            </td>
+                                            <td>Tinta de impresión por Inyección </td>
+                                            <td>
+                                                Tinta BB ultra flexible para impresoras digitales
+                                            </td>
+                                            <td>
+                                                TINTAS Y SUMINISTROS
+                                            </td>
+                                            <td>
+                                                01-CONSUMIBLES
+                                            </td>
+                                            <td class="ver-pedido">
+                                                <a href="#" title=" Ver SKU a DETALLE">VER<span class="las la-angle-double-right"></span> </a>
+                                            </td>
+                                            <td>
+                                                <span class="status purple"></span> Activo
+                                            </td>
+                                            <td class="export" onclick="alert('¿Estas seguro que desear MODIFICAR esta partida?, precione ESC para CANCELAR.')">
+                                                <span class="las la-file-export"></span>MODIFICAR
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                A-512395
+                                            </td>
+                                            <td>
+                                                150 CJAS.
+                                            </td>
+                                            <td>Tinta de impresión por Inyección </td>
+                                            <td>
+                                                Tinta BB ultra flexible para impresoras digitales
+                                            </td>
+                                            <td>
+                                                TINTAS Y SUMINISTROS
+                                            </td>
+                                            <td>
+                                                01-CONSUMIBLES
+                                            </td>
+                                            <td class="ver-pedido">
+                                                <a href="#" title=" Ver SKU a DETALLE">VER<span class="las la-angle-double-right"></span> </a>
+                                            </td>
+                                            <td>
+                                                <span class="status purple"></span> Activo
+                                            </td>
+                                            <td class="export" onclick="alert('¿Estas seguro que desear MODIFICAR esta partida?, precione ESC para CANCELAR.')">
+                                                <span class="las la-file-export"></span>MODIFICAR
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                A-512395
+                                            </td>
+                                            <td>
+                                                150 CJAS.
+                                            </td>
+                                            <td>Tinta de impresión por Inyección </td>
+                                            <td>
+                                                Tinta BB ultra flexible para impresoras digitales
+                                            </td>
+                                            <td>
+                                                TINTAS Y SUMINISTROS
+                                            </td>
+                                            <td>
+                                                01-CONSUMIBLES
+                                            </td>
+                                            <td class="ver-pedido">
+                                                <a href="#" title=" Ver SKU a DETALLE">VER<span class="las la-angle-double-right"></span> </a>
+                                            </td>
+                                            <td>
+                                                <span class="status purple"></span> Activo
+                                            </td>
+                                            <td class="export" onclick="alert('¿Estas seguro que desear MODIFICAR esta partida?, precione ESC para CANCELAR.')">
+                                                <span class="las la-file-export"></span>MODIFICAR
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                A-512395
+                                            </td>
+                                            <td>
+                                                150 CJAS.
+                                            </td>
+                                            <td>Tinta de impresión por Inyección </td>
+                                            <td>
+                                                Tinta BB ultra flexible para impresoras digitales
+                                            </td>
+                                            <td>
+                                                TINTAS Y SUMINISTROS
+                                            </td>
+                                            <td>
+                                                01-CONSUMIBLES
+                                            </td>
+                                            <td class="ver-pedido">
+                                                <a href="#" title=" Ver SKU a DETALLE">VER<span class="las la-angle-double-right"></span> </a>
+                                            </td>
+                                            <td>
+                                                <span class="status purple"></span> Activo
+                                            </td>
+                                            <td class="export" onclick="alert('¿Estas seguro que desear MODIFICAR esta partida?, precione ESC para CANCELAR.')">
+                                                <span class="las la-file-export"></span>MODIFICAR
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                A-512395
+                                            </td>
+                                            <td>
+                                                150 CJAS.
+                                            </td>
+                                            <td>Tinta de impresión por Inyección </td>
+                                            <td>
+                                                Tinta BB ultra flexible para impresoras digitales
+                                            </td>
+                                            <td>
+                                                TINTAS Y SUMINISTROS
+                                            </td>
+                                            <td>
+                                                01-CONSUMIBLES
+                                            </td>
+                                            <td class="ver-pedido">
+                                                <a href="#" title=" Ver SKU a DETALLE">VER<span class="las la-angle-double-right"></span> </a>
+                                            </td>
+                                            <td>
+                                                <span class="status purple"></span> Activo
+                                            </td>
+                                            <td class="export" onclick="alert('¿Estas seguro que desear MODIFICAR esta partida?, precione ESC para CANCELAR.')">
+                                                <span class="las la-file-export"></span>MODIFICAR
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                A-512395
+                                            </td>
+                                            <td>
+                                                150 CJAS.
+                                            </td>
+                                            <td>Tinta de impresión por Inyección </td>
+                                            <td>
+                                                Tinta BB ultra flexible para impresoras digitales
+                                            </td>
+                                            <td>
+                                                TINTAS Y SUMINISTROS
+                                            </td>
+                                            <td>
+                                                01-CONSUMIBLES
+                                            </td>
+                                            <td class="ver-pedido">
+                                                <a href="#" title=" Ver SKU a DETALLE">VER<span class="las la-angle-double-right"></span> </a>
+                                            </td>
+                                            <td>
+                                                <span class="status purple"></span> Activo
+                                            </td>
+                                            <td class="export" onclick="alert('¿Estas seguro que desear MODIFICAR esta partida?, precione ESC para CANCELAR.')">
+                                                <span class="las la-file-export"></span>MODIFICAR
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                A-512395
+                                            </td>
+                                            <td>
+                                                150 CJAS.
+                                            </td>
+                                            <td>Tinta de impresión por Inyección </td>
+                                            <td>
+                                                Tinta BB ultra flexible para impresoras digitales
+                                            </td>
+                                            <td>
+                                                TINTAS Y SUMINISTROS
+                                            </td>
+                                            <td>
+                                                01-CONSUMIBLES
+                                            </td>
+                                            <td class="ver-pedido">
+                                                <a href="#" title=" Ver SKU a DETALLE">VER<span class="las la-angle-double-right"></span> </a>
+                                            </td>
+                                            <td>
+                                                <span class="status purple"></span> Activo
+                                            </td>
+                                            <td class="export" onclick="alert('¿Estas seguro que desear MODIFICAR esta partida?, precione ESC para CANCELAR.')">
+                                                <span class="las la-file-export"></span>MODIFICAR
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                A-512395
+                                            </td>
+                                            <td>
+                                                150 CJAS.
+                                            </td>
+                                            <td>Tinta de impresión por Inyección </td>
+                                            <td>
+                                                Tinta BB ultra flexible para impresoras digitales
+                                            </td>
+                                            <td>
+                                                TINTAS Y SUMINISTROS
+                                            </td>
+                                            <td>
+                                                01-CONSUMIBLES
+                                            </td>
+                                            <td class="ver-pedido">
+                                                <a href="#" title=" Ver SKU a DETALLE">VER<span class="las la-angle-double-right"></span> </a>
+                                            </td>
+                                            <td>
+                                                <span class="status purple"></span> Activo
+                                            </td>
+                                            <td class="export" onclick="alert('¿Estas seguro que desear MODIFICAR esta partida?, precione ESC para CANCELAR.')">
+                                                <span class="las la-file-export"></span>MODIFICAR
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                A-512395
+                                            </td>
+                                            <td>
+                                                150 CJAS.
+                                            </td>
+                                            <td>Tinta de impresión por Inyección </td>
+                                            <td>
+                                                Tinta BB ultra flexible para impresoras digitales
+                                            </td>
+                                            <td>
+                                                TINTAS Y SUMINISTROS
+                                            </td>
+                                            <td>
+                                                01-CONSUMIBLES
+                                            </td>
+                                            <td class="ver-pedido">
+                                                <a href="#" title=" Ver SKU a DETALLE">VER<span class="las la-angle-double-right"></span> </a>
+                                            </td>
+                                            <td>
+                                                <span class="status purple"></span> Activo
+                                            </td>
+                                            <td class="export" onclick="alert('¿Estas seguro que desear MODIFICAR esta partida?, precione ESC para CANCELAR.')">
+                                                <span class="las la-file-export"></span>MODIFICAR
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                A-512395
+                                            </td>
+                                            <td>
+                                                150 CJAS.
+                                            </td>
+                                            <td>Tinta de impresión por Inyección </td>
+                                            <td>
+                                                Tinta BB ultra flexible para impresoras digitales
+                                            </td>
+                                            <td>
+                                                TINTAS Y SUMINISTROS
+                                            </td>
+                                            <td>
+                                                01-CONSUMIBLES
+                                            </td>
+                                            <td class="ver-pedido">
+                                                <a href="#" title=" Ver SKU a DETALLE">VER<span class="las la-angle-double-right"></span> </a>
+                                            </td>
+                                            <td>
+                                                <span class="status purple"></span> Activo
+                                            </td>
+                                            <td class="export" onclick="alert('¿Estas seguro que desear MODIFICAR esta partida?, precione ESC para CANCELAR.')">
+                                                <span class="las la-file-export"></span>MODIFICAR
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                A-512395
+                                            </td>
+                                            <td>
+                                                150 CJAS.
+                                            </td>
+                                            <td>Tinta de impresión por Inyección </td>
+                                            <td>
+                                                Tinta BB ultra flexible para impresoras digitales
+                                            </td>
+                                            <td>
+                                                TINTAS Y SUMINISTROS
+                                            </td>
+                                            <td>
+                                                01-CONSUMIBLES
+                                            </td>
+                                            <td class="ver-pedido">
+                                                <a href="#" title=" Ver SKU a DETALLE">VER<span class="las la-angle-double-right"></span> </a>
+                                            </td>
+                                            <td>
+                                                <span class="status purple"></span> Activo
+                                            </td>
+                                            <td class="export" onclick="alert('¿Estas seguro que desear MODIFICAR esta partida?, precione ESC para CANCELAR.')">
+                                                <span class="las la-file-export"></span>MODIFICAR
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                A-512395
+                                            </td>
+                                            <td>
+                                                150 CJAS.
+                                            </td>
+                                            <td>Tinta de impresión por Inyección </td>
+                                            <td>
+                                                Tinta BB ultra flexible para impresoras digitales
+                                            </td>
+                                            <td>
+                                                TINTAS Y SUMINISTROS
+                                            </td>
+                                            <td>
+                                                01-CONSUMIBLES
+                                            </td>
+                                            <td class="ver-pedido">
+                                                <a href="#" title=" Ver SKU a DETALLE">VER<span class="las la-angle-double-right"></span> </a>
+                                            </td>
+                                            <td>
+                                                <span class="status purple"></span> Activo
+                                            </td>
+                                            <td class="export" onclick="alert('¿Estas seguro que desear MODIFICAR esta partida?, precione ESC para CANCELAR.')">
+                                                <span class="las la-file-export"></span>MODIFICAR
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                A-512395
+                                            </td>
+                                            <td>
+                                                150 CJAS.
+                                            </td>
+                                            <td>Tinta de impresión por Inyección </td>
+                                            <td>
+                                                Tinta BB ultra flexible para impresoras digitales
+                                            </td>
+                                            <td>
+                                                TINTAS Y SUMINISTROS
+                                            </td>
+                                            <td>
+                                                01-CONSUMIBLES
+                                            </td>
+                                            <td class="ver-pedido">
+                                                <a href="#" title=" Ver SKU a DETALLE">VER<span class="las la-angle-double-right"></span> </a>
+                                            </td>
+                                            <td>
+                                                <span class="status purple"></span> Activo
+                                            </td>
+                                            <td class="export" onclick="alert('¿Estas seguro que desear MODIFICAR esta partida?, precione ESC para CANCELAR.')">
+                                                <span class="las la-file-export"></span>MODIFICAR
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                A-512395
+                                            </td>
+                                            <td>
+                                                150 CJAS.
+                                            </td>
+                                            <td>Tinta de impresión por Inyección </td>
+                                            <td>
+                                                Tinta BB ultra flexible para impresoras digitales
+                                            </td>
+                                            <td>
+                                                TINTAS Y SUMINISTROS
+                                            </td>
+                                            <td>
+                                                01-CONSUMIBLES
+                                            </td>
+                                            <td class="ver-pedido">
+                                                <a href="#" title=" Ver SKU a DETALLE">VER<span class="las la-angle-double-right"></span> </a>
+                                            </td>
+                                            <td>
+                                                <span class="status purple"></span> Activo
+                                            </td>
+                                            <td class="export" onclick="alert('¿Estas seguro que desear MODIFICAR esta partida?, precione ESC para CANCELAR.')">
+                                                <span class="las la-file-export"></span>MODIFICAR
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                A-512395
+                                            </td>
+                                            <td>
+                                                150 CJAS.
+                                            </td>
+                                            <td>Tinta de impresión por Inyección </td>
+                                            <td>
+                                                Tinta BB ultra flexible para impresoras digitales
+                                            </td>
+                                            <td>
+                                                TINTAS Y SUMINISTROS
+                                            </td>
+                                            <td>
+                                                01-CONSUMIBLES
+                                            </td>
+                                            <td class="ver-pedido">
+                                                <a href="#" title=" Ver SKU a DETALLE">VER<span class="las la-angle-double-right"></span> </a>
+                                            </td>
+                                            <td>
+                                                <span class="status purple"></span> Activo
+                                            </td>
+                                            <td class="export" onclick="alert('¿Estas seguro que desear  MODIFICAR esta partida?, precione ESC para CANCELAR.')">
+                                                <span class="las la-file-export"></span>MODIFICAR
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+        </main>
+    </div>
+
+</body>
+
+</html>
